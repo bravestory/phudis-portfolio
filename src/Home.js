@@ -1,23 +1,46 @@
-import logo from './logo.svg';
+import github from "./github.png";
+import linkedin from "./LinkedIn.png";
 import './App.css';
+import TypeWriterEffect from 'react-typewriter-effect';
 
 function App() {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
           <p>
-            Fuck you!
+            Hi There! I am Phudis Rangsisuriyachai
           </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
+          <a>
+          I'm a passionate 
           </a>
+          <TypeWriterEffect
+            textStyle={{
+              fontFfamily: 'Red Hat Display',
+              color: 'white',
+              fontWeight: 500,
+              fontSize: '1.5em',
+            }}
+            startDelay={2000}
+            cursorColor = "#3F3D56"
+            multiText={[
+              'Web Designer',
+              'Gamer',
+              'Software Developer',
+              'Final Fantasy Enjoyer'
+            ]}
+            multiTextDelay={1000}
+            typeSpeed={30}
+            multiTextLoop
+          />
         </header>
+        <div className="logo-container">
+          <a href="https://github.com/bravestory"  target="_blank" rel="noopener noreferrer" >
+            <img src={github} className="git-logo" alt="logo" />
+          </a>
+          <a href="https://www.linkedin.com/in/phudis-rangsisuriyachai" target="_blank" rel="noopener noreferrer" >
+            <img src={linkedin} className="linked-logo" alt="logo" />
+          </a>
+        </div>
       </div>
     );
   }

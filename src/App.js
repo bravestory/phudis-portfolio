@@ -5,9 +5,10 @@ import Education from "./Education";
 import Project from "./Project";
 import Resume from "./Resume";
 import Skill from "./Skill";
+import MovingGif from "./magewalk.gif";
 
 function App() {
-  const [activeTab, setActiveTab] = useState("home");
+  const [activeTab, setActiveTab] = useState("home"); //usestate for setting the page as the first time you open the page
   const handleTabClick = (tab) => {
     setActiveTab(tab);
   };
@@ -29,6 +30,12 @@ function App() {
             Project
           </li>
           <li
+            onClick={() => handleTabClick("education")}
+            className={activeTab === "education" ? "active education" : "education"}
+          >
+            Education
+          </li>
+          <li
             onClick={() => handleTabClick("resume")}
             className={activeTab === "resume" ? "active resume" : "resume"}
           >
@@ -40,22 +47,20 @@ function App() {
           >
             Skill
           </li>
-          <li
-            onClick={() => handleTabClick("education")}
-            className={activeTab === "education" ? "active education" : "education"}
-          >
-            Education
-          </li>
         </ul>
         <div className="tab-content">
           {activeTab === "home" && <Home />}
           {activeTab === "project" && <Project />}
+          {activeTab === "education" && <Education />}
           {activeTab === "resume" && <Resume />}
           {activeTab === "skill" && <Skill />}
-          {activeTab === "education" && <Education />}
         </div>
       </div>
+      <div className="moving-gif-container">
+        <img src={MovingGif} alt="Moving GIF" className="moving-gif" />
+      </div>
     </div>
+    
   );
 }
 

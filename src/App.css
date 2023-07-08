@@ -1,21 +1,59 @@
-.App {
+body {
   text-align: center;
+  background: #282c34;
+  margin: 0; /* Reset the default margin */
+  padding: 0; /* Reset the default padding */
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App {
+  /* Reset  the default padding */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0;
+}
+
+.git-logo,
+.linked-logo {
+  height: 5vmin;
+  margin: 0 2px;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.git-logo:hover,
+.linked-logo:hover {
+  opacity: 0.5;
+}
+
+@keyframes logoFade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
+
+
+/*
+@media (prefers-reduced-motion: no-preference) {
+  .git-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+*/
+
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  min-height: 81vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,7 +70,7 @@
   display: flex;
   list-style: none;
   padding: 0;
-  background-color: transparent;
+  background: transparent;
 }
 
 .tab-bar li {
@@ -40,12 +78,28 @@
   border: none;
   cursor: pointer;
   padding: 10px;
-  background-color: transparent;
+  color: white
 }
 
-.active {
-  /* Add styling for the active tab button */
-  background-color: transparent;
+.moving-gif-container {
+  bottom: 0;
+  width: 100%;
+  display: flex;
+}
+
+.moving-gif {
+  max-width: 100%;
+  position: absolute;
+  animation: moveLeft 10s linear infinite; /* Adjust the duration and timing function as needed */
+}
+
+@keyframes moveLeft {
+  0% {
+    right: -100%; /* Starting position off the left side */
+  }
+  100% {
+    right: 100%; /* End position off the right side */
+  }
 }
 
 @keyframes App-logo-spin {
@@ -56,3 +110,5 @@
     transform: rotate(360deg);
   }
 }
+
+/*-----------------------------------------Home page Section End----------------------------------------*/
