@@ -10,6 +10,45 @@ body {
   /* Reset  the default padding */
 }
 
+.animate {
+  animation-duration: 0.34s;
+  animation-fill-mode: both;
+}
+
+.animate--infinite {
+  animation-iteration-count: infinite;
+}
+
+.animate--delay-1s {
+  animation-delay: 0.4s;
+}
+
+.animate--fast {
+  animation-duration: 0.3s;
+}
+
+.animate--slow {
+  animation-duration: 0.37s;
+}
+
+.slideUptoBot {
+  animation-name: slideUptoBot;
+  animation-timing-function: ease-in;
+}
+
+@keyframes slideUptoBot {
+  from {
+    transform: translateY(-150px);
+    opacity: 0;
+    filter: blur(5px);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
 .logo-container {
   display: flex;
   justify-content: center;
@@ -41,16 +80,6 @@ body {
     opacity: 0;
   }
 }
-
-
-
-/*
-@media (prefers-reduced-motion: no-preference) {
-  .git-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-*/
 
 .App-header {
   min-height: 81vh;
