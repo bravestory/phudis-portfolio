@@ -5,7 +5,6 @@ import Education from "./Education";
 import Project from "./Project";
 import Resume from "./Resume";
 import Skill from "./Skill";
-import MovingGif from "./magewalk.gif";
 
 function App() {
   const [activeTab, setActiveTab] = useState("home"); //usestate for setting the page as the first time you open the page
@@ -55,9 +54,6 @@ function App() {
           {activeTab === "resume" && <Resume />}
           {activeTab === "skill" && <Skill />}
         </div>
-      </div>
-      <div className="moving-gif-container">
-        <img src={MovingGif} alt="Moving GIF" className="moving-gif" />
       </div>
     </div>
     

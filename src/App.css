@@ -1,3 +1,4 @@
+/*----------------------------------------- App page-----------------------------------------*/
 body {
   text-align: center;
   background: #282c34;
@@ -8,45 +9,6 @@ body {
 
 .App {
   /* Reset  the default padding */
-}
-
-.animate {
-  animation-duration: 0.34s;
-  animation-fill-mode: both;
-}
-
-.animate--infinite {
-  animation-iteration-count: infinite;
-}
-
-.animate--delay-1s {
-  animation-delay: 0.4s;
-}
-
-.animate--fast {
-  animation-duration: 0.3s;
-}
-
-.animate--slow {
-  animation-duration: 0.37s;
-}
-
-.slideUptoBot {
-  animation-name: slideUptoBot;
-  animation-timing-function: ease-in;
-}
-
-@keyframes slideUptoBot {
-  from {
-    transform: translateY(-150px);
-    opacity: 0;
-    filter: blur(5px);
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-    filter: blur(0);
-  }
 }
 
 .logo-container {
@@ -89,6 +51,7 @@ body {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .App-link {
@@ -140,4 +103,112 @@ body {
   }
 }
 
+/*-----------------------------------------App page Section End----------------------------------------*/
+
+/*----------------------------------------- Home page-----------------------------------------*/
+.Home-header {
+  min-height: 81vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.head {
+  color: #27fe27;
+}
+
+.animate {
+  animation-duration: 0.34s;
+  animation-fill-mode: both;
+  margin-bottom: 50px;
+}
+
+.animate--infinite {
+  animation-iteration-count: infinite;
+}
+
+.animate--delay-1s {
+  animation-delay: 0.4s;
+}
+
+.animate--fast {
+  animation-duration: 0.3s;
+}
+
+.animate--slow {
+  animation-duration: 0.37s;
+}
+
+.slideUptoBot {
+  animation-name: slideUptoBot;
+  animation-timing-function: ease-in;
+}
+
+.font {
+  font-family: 'Press Start 2P', cursive;
+  margin-bottom: 40px;
+}
+
+@keyframes slideUptoBot {
+  from {
+    transform: translateY(-150px);
+    opacity: 0;
+    filter: blur(5px);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
 /*-----------------------------------------Home page Section End----------------------------------------*/
+
+/*----------------------------------------- Education page -----------------------------------------*/
+
+.highschool-card{
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.smc-card{
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.ucsc-card{
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+section {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  min-height: 100vh;
+}
+
+@media(prefers-reduced-motion) {
+  .hidden{
+    transition: none;
+  }
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(3px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+/*-----------------------------------------Education page Section End----------------------------------------*/

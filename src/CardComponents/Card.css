@@ -1,0 +1,102 @@
+.HighSchool{
+    width: 400px;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px -5px;
+    transition: 0.3s;
+    animation: ease-in;
+    background-color: white;
+}
+
+.HighSchool:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px 0px;
+}
+
+.HighSchool-image img{
+    overflow: hidden;
+    height: 300px;
+}
+
+.HighSchool-content{
+    margin: 1rem;
+    margin-top: 0.3rem;
+}
+
+h3,p{
+    margin: 0;
+    padding: 0;
+}
+
+.HighSchool-title{
+    margin-bottom: 0.5rem;
+}
+
+/*----------------------------------------------------------------------*/
+
+.smc{
+    width: 400px;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px -5px;
+    transition: 0.3s;
+    animation: ease-in;
+    background-color: white;
+}
+
+.smc:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px 0px;
+}
+
+.smc-image img{
+    overflow: hidden;
+    height: 300px;
+}
+
+.smc-content{
+    margin: 1rem;
+    margin-top: 0.3rem;
+}
+
+h3,p{
+    margin: 0;
+    padding: 0;
+}
+
+.smc-title{
+    margin-bottom: 0.5rem;
+}
+
+/*----------------------------------------------------------------------*/
+
+.UCSC{
+    width: 400px;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px -5px;
+    transition: 0.3s;
+    animation: ease-in;
+    background-color: white;
+}
+
+.UCSC:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px 0px;
+}
+
+.UCSC-image img{
+    overflow: hidden;
+    height: 300px;
+}
+
+.UCSC-content{
+    margin: 1rem;
+    margin-top: 0.3rem;
+}
+
+h3,p{
+    margin: 0;
+    padding: 0;
+}
+
+.UCSC-title{
+    margin-bottom: 0.5rem;
+}
