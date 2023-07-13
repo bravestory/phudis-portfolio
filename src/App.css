@@ -192,6 +192,7 @@ section {
   min-height: 100vh;
 }
 
+/*
 @media(prefers-reduced-motion) {
   .hidden{
     transition: none;
@@ -210,5 +211,7 @@ section {
   filter: blur(0);
   transform: translateX(0);
 }
+*/
+
 
 /*-----------------------------------------Education page Section End----------------------------------------*/

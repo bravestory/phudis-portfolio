@@ -1,15 +1,16 @@
 import './App.css';
-import Card from "./CardComponents/Card";
-import CardSMC from "./CardComponents/CardSMC";
-import CardUCSC from "./CardComponents/CardUCSC";
-import highschoolpic from "./image/HighSchool.jpg";
-import SMCbuilding from "./image/smc-building.jpg";
-import ucsclogo from "./image/UCSC.jpg";
-import highschoolgif from "./image/HighSchool.gif";
-import smcgif from "./image/SMCstudent.gif";
-import UCSCgif from "./image/graduationpic.gif";
+import Card from './CardComponents/Card';
+import CardSMC from './CardComponents/CardSMC';
+import CardUCSC from './CardComponents/CardUCSC';
+import highschoolpic from './image/HighSchool.jpg';
+import SMCbuilding from './image/smc-building.jpg';
+import ucsclogo from './image/UCSC.jpg';
+import highschoolgif from './image/HighSchool.gif';
+import smcgif from './image/SMCstudent.gif';
+import UCSCgif from './image/graduationpic.gif';
 
 function App() {
+  /*
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if(entry.isIntersecting)
@@ -24,8 +25,9 @@ function App() {
   })
 
   const hiddenElements = document.querySelectorAll('.hidden');
-  hiddenElements.forEach((el) => observer.observe(el))
-
+  hiddenElements.forEach((element) => observer.observe(element))
+  */
+ 
     return (
       <div className="Education">
         <section className="hidden">
