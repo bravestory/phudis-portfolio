@@ -1,24 +1,26 @@
 import './App.css';
+import resumePDF from './Resume.pdf';
+import React from 'react';
+
 
 function App() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <p>
-            Go find your job
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
+  return (
+  <div>
+    <div className="Resume">
+      Resume
+    </div>
+    <div>
+      <iframe src={resumePDF} style={{ width: '70%', height: '1000px' }}>
+        <button>
+          <a href={resumePDF} target="_blank" rel="noopener noreferrer">
+            Download here
           </a>
-        </header>
-      </div>
-    );
-  }
+        </button>
+      </iframe>
+    </div>
+  </div>
+  );
+}
   
-  export default App;
+export default App;
   

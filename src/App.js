@@ -4,7 +4,6 @@ import Home from "./Home";
 import Education from "./Education";
 import Project from "./Project";
 import Resume from "./Resume";
-import Skill from "./Skill";
 
 function App() {
   const [activeTab, setActiveTab] = useState("home"); //usestate for setting the page as the first time you open the page
@@ -40,19 +39,12 @@ function App() {
           >
             Resume
           </li>
-          <li
-            onClick={() => handleTabClick("skill")}
-            className={activeTab === "skill" ? "active skill" : "skill"}
-          >
-            Skill
-          </li>
         </ul>
         <div className="tab-content">
           {activeTab === "home" && <Home />}
           {activeTab === "project" && <Project />}
           {activeTab === "education" && <Education />}
           {activeTab === "resume" && <Resume />}
-          {activeTab === "skill" && <Skill />}
         </div>
       </div>
     </div>
